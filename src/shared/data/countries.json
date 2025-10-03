@@ -1,0 +1,14 @@
+[
+  { "code": "AE", "nameEn": "United Arab Emirates", "nameAr": "الإمارات العربية المتحدة", "dialCode": "+971" },
+  { "code": "EG", "nameEn": "Egypt", "nameAr": "مصر", "dialCode": "+20" },
+  { "code": "SA", "nameEn": "Saudi Arabia", "nameAr": "المملكة العربية السعودية", "dialCode": "+966" },
+  { "code": "QA", "nameEn": "Qatar", "nameAr": "قطر", "dialCode": "+974" },
+  { "code": "KW", "nameEn": "Kuwait", "nameAr": "الكويت", "dialCode": "+965" },
+  { "code": "OM", "nameEn": "Oman", "nameAr": "عُمان", "dialCode": "+968" },
+  { "code": "BH", "nameEn": "Bahrain", "nameAr": "البحرين", "dialCode": "+973" },
+  { "code": "US", "nameEn": "United States", "nameAr": "الولايات المتحدة", "dialCode": "+1" },
+  { "code": "GB", "nameEn": "United Kingdom", "nameAr": "المملكة المتحدة", "dialCode": "+44" },
+  { "code": "DE", "nameEn": "Germany", "nameAr": "ألمانيا", "dialCode": "+49" },
+  { "code": "ES", "nameEn": "Spain", "nameAr": "إسبانيا", "dialCode": "+34" },
+  { "code": "FR", "nameEn": "France", "nameAr": "فرنسا", "dialCode": "+33" }
+]
