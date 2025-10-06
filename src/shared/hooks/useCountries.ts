@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import countries from "../../data/countries.json";
+import countries from "../data/countries.json";
 import type { Country } from "../types/country";
 
 export function useCountries() {
