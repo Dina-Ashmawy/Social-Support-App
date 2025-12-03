@@ -21,7 +21,7 @@ export const stepOneSchema = yup.object({
 
   gender: yup
     .string()
-    .oneOf(GENDER_OPTIONS)
+    .oneOf(GENDER_OPTIONS, safeTranslate("error_message_gender"))
     .required(safeTranslate("error_message_gender")),
 
   address: yup

@@ -18,7 +18,7 @@ const SuccessScreen: React.FC = () => {
         <Button
           type="primary"
           key="new"
-          onClick={() => navigate("/step1", { replace: true })}
+          onClick={() => navigate("/", { replace: true })}
         >
           {t("start_new_application")}
         </Button>,

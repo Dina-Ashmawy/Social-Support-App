@@ -21,11 +21,11 @@ export const StepThreeSituationInfo: React.FC<Props> = ({
 
   const {
     control,
+
     setValue,
-    getValues,
+    watch,
     formState: { errors, isSubmitting },
   } = useFormContext<WizardValues>();
-
   return (
     <form
       onSubmit={(e) => {
@@ -43,7 +43,7 @@ export const StepThreeSituationInfo: React.FC<Props> = ({
           </label>
           <HelpMeWriteButton
             topicKey="currentFinancialSituation"
-            currentValue={getValues("situationCurrent") || ""}
+            currentValue={watch("situationCurrent") || ""}
             onAccept={(text) =>
               setValue("situationCurrent", text, { shouldDirty: true })
             }
@@ -80,7 +80,7 @@ export const StepThreeSituationInfo: React.FC<Props> = ({
           </label>
           <HelpMeWriteButton
             topicKey="employmentCircumstances"
-            currentValue={getValues("employmentCircumstances") || ""}
+            currentValue={watch("employmentCircumstances") || ""}
             onAccept={(text) =>
               setValue("employmentCircumstances", text, { shouldDirty: true })
             }
@@ -123,7 +123,7 @@ export const StepThreeSituationInfo: React.FC<Props> = ({
           </label>
           <HelpMeWriteButton
             topicKey="reasonForApplying"
-            currentValue={getValues("reasonApplying") || ""}
+            currentValue={watch("reasonApplying") || ""}
             onAccept={(text) =>
               setValue("reasonApplying", text, { shouldDirty: true })
             }

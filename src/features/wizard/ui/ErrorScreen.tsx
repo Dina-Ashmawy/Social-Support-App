@@ -16,10 +16,7 @@ const ErrorScreen: React.FC = () => {
         <Button key="retry" type="primary" onClick={() => navigate(-1)}>
           {t("retry")}
         </Button>,
-        <Button
-          key="home"
-          onClick={() => navigate("/step1", { replace: true })}
-        >
+        <Button key="home" onClick={() => navigate("/", { replace: true })}>
           {t("back_to_start")}
         </Button>,
       ]}
