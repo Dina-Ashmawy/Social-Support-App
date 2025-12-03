@@ -20,5 +20,3 @@ export const stepThreeSchema = yup.object({
     .min(20, safeTranslate("error_message_minChars20"))
     .required(safeTranslate("error_message_reasonApplying")),
 });
-
-export type StepThreeValues = yup.InferType<typeof stepThreeSchema>;

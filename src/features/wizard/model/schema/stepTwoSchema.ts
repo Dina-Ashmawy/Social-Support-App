@@ -1,14 +1,16 @@
 import * as yup from "yup";
 import { safeTranslate } from "../../../../lib/i18n";
+import {
+  EMPLOYMENT_OPTIONS,
+  HOUSING_OPTIONS,
+  MARITAL_OPTIONS,
+} from "../../../../shared/constants/selectOptions";
 
 export const stepTwoSchema = yup.object({
   maritalStatus: yup
     .string()
     .transform((v) => String(v ?? ""))
-    .oneOf(
-      ["single", "married", "divorced", "widowed"],
-      safeTranslate("error_message_maritalStatus")
-    )
+    .oneOf(MARITAL_OPTIONS, safeTranslate("error_message_maritalStatus"))
     .required(safeTranslate("error_message_required")),
 
   dependentsCount: yup
@@ -22,10 +24,7 @@ export const stepTwoSchema = yup.object({
   employmentStatus: yup
     .string()
     .transform((v) => String(v ?? ""))
-    .oneOf(
-      ["employed", "unemployed", "selfEmployed", "student", "retired"],
-      safeTranslate("error_message_employmentStatus")
-    )
+    .oneOf(EMPLOYMENT_OPTIONS, safeTranslate("error_message_employmentStatus"))
     .required(safeTranslate("error_message_required")),
 
   monthlyIncome: yup
@@ -38,11 +37,6 @@ export const stepTwoSchema = yup.object({
   housingStatus: yup
     .string()
     .transform((v) => String(v ?? ""))
-    .oneOf(
-      ["rent", "own", "withFamily", "otherHousing"],
-      safeTranslate("error_message_housingStatus")
-    )
+    .oneOf(HOUSING_OPTIONS, safeTranslate("error_message_housingStatus"))
     .required(safeTranslate("error_message_required")),
 });
-
-export type StepTwoValues = yup.InferType<typeof stepTwoSchema>;

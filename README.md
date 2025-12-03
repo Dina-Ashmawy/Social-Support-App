@@ -85,7 +85,7 @@ src/
     wizard/         # schemas, state, step components
   shared/           # constants, data, ui, hooks, types
   pages/            # Home, Wizard pages
-  routes/           # AppRoutes, Guard
+  routes/           # AppRoutes
   store/            # Redux store
   lib/              # i18n setup + helpers
 ```

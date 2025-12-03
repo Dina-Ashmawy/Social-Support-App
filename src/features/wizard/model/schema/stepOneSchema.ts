@@ -21,7 +21,7 @@ export const stepOneSchema = yup.object({
 
   gender: yup
     .string()
-    .oneOf(GENDER_OPTIONS, safeTranslate("error_message_gender"))
+    .oneOf(GENDER_OPTIONS)
     .required(safeTranslate("error_message_gender")),
 
   address: yup
@@ -54,5 +54,3 @@ export const stepOneSchema = yup.object({
     .email(safeTranslate("error_message_email"))
     .required(safeTranslate("error_message_required")),
 });
-
-export type StepOneFormValues = yup.InferType<typeof stepOneSchema>;

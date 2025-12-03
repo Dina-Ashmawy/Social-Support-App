@@ -30,7 +30,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        localStorage.setItem("step1Done", "true");
         goNext();
       }}
       className="space-y-4"

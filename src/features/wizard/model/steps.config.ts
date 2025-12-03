@@ -1,4 +1,3 @@
-// steps.config.ts
 import type { FieldPath } from "react-hook-form";
 import type { WizardValues } from "./types";
 
