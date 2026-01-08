@@ -34,6 +34,7 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
       className="space-y-4"
       aria-label={t("personalInfo")}
     >
+      {" "}
       {/* Name */}
       <div>
         <label htmlFor="name">{t("name")}</label>
@@ -56,7 +57,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Email */}
       <div>
         <label htmlFor="email">{t("email")}</label>
@@ -80,7 +80,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* National ID */}
       <div>
         <label htmlFor="nationalId">{t("nationalId")}</label>
@@ -105,7 +104,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Date of Birth (AntD handles ARIA; keep it simple) */}
       <div>
         <label htmlFor="dob">{t("dob")}</label>
@@ -141,7 +139,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Gender (AntD Select: no extra ARIA) */}
       <div>
         <label htmlFor="gender">{t("gender")}</label>
@@ -173,7 +170,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Country (AntD Select: no extra ARIA) */}
       <div>
         <label htmlFor="country">{t("country")}</label>
@@ -205,7 +201,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* City */}
       <div>
         <label htmlFor="city">{t("city")}</label>
@@ -228,7 +223,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* State */}
       <div>
         <label htmlFor="state">{t("state")}</label>
@@ -251,7 +245,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Address */}
       <div>
         <label htmlFor="address">{t("address")}</label>
@@ -274,7 +267,6 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Phone */}
       <div>
         <label htmlFor="phone">{t("phone")}</label>
@@ -297,9 +289,8 @@ export const StepOnePersonalInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* actions */}
-      <div className="flex justify-end gap-2 pt-2">
+      <div className="flex  gap-2 pt-2">
         <Button onClick={onSaveDraft} htmlType="button">
           {t("saveDraft")}
         </Button>

@@ -1,4 +1,3 @@
-// src/store/form/stepThreeSlice.ts
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { WizardValues } from "../model/types";
 

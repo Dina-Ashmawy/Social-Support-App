@@ -54,5 +54,3 @@ export const stepOneSchema = yup.object({
     .email(safeTranslate("error_message_email"))
     .required(safeTranslate("error_message_required")),
 });
-
-export type StepOneFormValues = yup.InferType<typeof stepOneSchema>;

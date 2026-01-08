@@ -35,6 +35,7 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
       }}
       className="space-y-4"
     >
+      {" "}
       {/* Marital Status (AntD Select: keep simple) */}
       <div>
         <label>{t("maritalStatus")}</label>
@@ -64,7 +65,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Dependents (AntD InputNumber: add id + htmlFor) */}
       <div>
         <label htmlFor="dependentsCount">{t("dependents")}</label>
@@ -90,7 +90,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Employment Status (AntD Select: keep simple) */}
       <div>
         <label>{t("employmentStatus")}</label>
@@ -120,7 +119,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Monthly Income (AntD InputNumber: add id + htmlFor) */}
       <div>
         <label htmlFor="monthlyIncome">{t("monthlyIncome")}</label>
@@ -146,7 +144,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       {/* Housing Status (AntD Select: keep simple) */}
       <div>
         <label>{t("housingStatus")}</label>
@@ -176,7 +173,6 @@ export const StepTwoFamilyInfo: React.FC<Props> = ({
           </p>
         )}
       </div>
-
       <div className="flex gap-2">
         <Button onClick={goBack}>{t("back")}</Button>
         <Button onClick={onSaveDraft} htmlType="button">
